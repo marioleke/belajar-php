@@ -114,21 +114,21 @@ switch($nama) {
         <label>Nama</label>
         <input type="text" name="nama">
         <label>Jumlah</label>
-        <input type="text" name="no">
+        <input type="number" name="no">
         <input type="submit" name="submit" value="Submit">
     </form>
     <?php
         if (!empty($_POST['submit'])) {
          
             switch($_POST['nama']) {
-                case "marc":
-                    echo $pesan = $_POST['nama']. " adalah orang Kupang";
+                case "Mario":
+                    $pesan = $_POST['nama']. " adalah orang Kupang";
                 break;
-                case "bintang":
-                    echo $pesan = $_POST['nama']. " berasal dari pulau jawa";
+                case "Bintang":
+                    $pesan = $_POST['nama']. " berasal dari pulau jawa";
                 break;
                 default:
-                    echo $pesan = $_POST['nama']." darimana ya?";
+                    $pesan = $_POST['nama']." darimana ya?";
             
             }
 
